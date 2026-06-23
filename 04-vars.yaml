@@ -1,7 +1,7 @@
 - name: Variables
   hosts: local
   connection: local
-  Vars:
+  vars:
    COURSE: "DAWS with siva"
    DURATION: "5months"
    TRAINER: "Siva kumar"
