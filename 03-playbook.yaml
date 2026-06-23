@@ -1,5 +1,6 @@
 - name: Niginx Installation
   hosts: web
+  become: yes
   tasks: 
   - name: package Installation
     ansible.builtin.package:
