@@ -4,10 +4,10 @@
   tasks: 
   - name: package Installation
     ansible.builtin.package:
-     name: niginx
+     name: nginx
      state: present
   
   - name: package start
     ansible.builtin.service:
-     name: niginx
+     name: nginx
      state: started
