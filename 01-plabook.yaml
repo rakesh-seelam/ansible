@@ -1,4 +1,4 @@
-- name: ansible playbook
+- name: ping the server
   host: web
   task:
    - name: ping the web server
