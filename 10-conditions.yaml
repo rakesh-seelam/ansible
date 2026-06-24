@@ -1,0 +1,9 @@
+- name: demo on conditions
+  hosts: local
+  connection: local
+  IS_LIVE: true
+  tasks: 
+  - name: conditions
+    ansible.builtin.debug:
+     msg: "Practice conditions"
+    when: IS_LIVE
