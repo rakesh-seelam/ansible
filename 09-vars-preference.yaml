@@ -6,9 +6,9 @@
    private: false
   # vars_files:
   #  - course.yaml
-  vars: 
-   COURSE: "DAWS from Play "
-   TRAINER: "Sivakumar"
+  # vars: 
+  #  COURSE: "DAWS from Play "
+  #  TRAINER: "Sivakumar"
   tasks:
   - name: Print vars
     # vars: 
