@@ -11,7 +11,7 @@
    TRAINER: "Sivakumar"
   tasks:
   - name: Print vars
-    vars: 
-     COURSE: "Ansible from TASK"
+    # vars: 
+    #  COURSE: "Ansible from TASK"
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, Trainer is {{ TRAINER }}"
