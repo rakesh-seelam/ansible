@@ -1,7 +1,13 @@
 - name: Demo on filters
   hosts: local
   connection: local
+  vars: 
+   topics: linux, shell, terraform, ansible
   tasks:
-  - name : greetings
+  - name: greetings
     ansible.builtin.debug:
      msg: "Hello Rakesh, {{ GREETING | default ('Good morning') }}"
+
+  - name: slipting Variable
+    ansible.builtin.debug:
+     msg: "{{ topics | split (',') }}" 
