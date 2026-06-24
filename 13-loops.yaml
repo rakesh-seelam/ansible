@@ -10,4 +10,4 @@
     loop:
      - { name: mysql, state: "present"}
      - { name: nginx, state: "absent"}
-     - { name: nodjs, state: "absent"}
+     - { name: nodejs, state: "absent"}
