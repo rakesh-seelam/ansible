@@ -3,9 +3,10 @@
   connection: local
   tasks:
   - name: printing list through Loops
-    ansible.builtin.debug:
-     msg: "Hello {{ item }}"
+    ansible.builtin.package:
+     name: "{{ item }}"
+     state: "{{ present }}"
     loop:
-     - Hanuma
-     - Rama
-     - Rakesh
+     - mysql
+     - nginx
+     - nodejs
