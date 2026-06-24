@@ -5,9 +5,9 @@
   tasks:
   - name: printing list through Loops
     ansible.builtin.package:
-     name: "{{ item }}"
-     state: present
+     name: "{{ item.name }}"
+     state: "{{ item.state }}"
     loop:
-     - mysql
-     - nginx
-     - nodejs
+     - { name: mysql, state: "present"}
+     - { name: nginx, state: "absent"}
+     - { name: nodjs, state: "absent"}
