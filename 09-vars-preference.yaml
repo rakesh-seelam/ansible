@@ -4,8 +4,8 @@
   vars_prompt:
    name: enter course
    private: false
-  vars_files:
-   - course.yaml
+  # vars_files:
+  #  - course.yaml
   vars: 
    COURSE: "DAWS from Play "
    TRAINER: "Sivakumar"
