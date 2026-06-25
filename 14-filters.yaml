@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: 
-   myIP: 255.566.728.876
+   myIP: 255.195.225.337
    COURSE: "DAWS with Anisble"
    topics: linux, shell, terraform, ansible
    tagsMap:
