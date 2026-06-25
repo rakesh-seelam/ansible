@@ -1,5 +1,5 @@
 - name: Creating User
-  user: local
+  hosts: local
   connection: local
   become: yes
   tasks:
