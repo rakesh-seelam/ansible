@@ -2,6 +2,7 @@
   hosts: local
   connection: local
   vars: 
+   myIP: 255.566.728.876
    COURSE: "DAWS with Anisble"
    topics: linux, shell, terraform, ansible
    tagsMap:
@@ -54,3 +55,7 @@
   - name: to LowerCase
     ansible.builtin.debug:
      msg: "{{ COURSE | lower }}"
+
+  - name: check IP
+    ansible.builtin.debug:
+     msg: "{{ myIP | anisble.utils.ipv4 }}"
