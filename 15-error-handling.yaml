@@ -1,0 +1,12 @@
+- name: Creating User
+  user: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Check User
+    ansible.builtin.command: id roboshop
+    register: user_output
+  
+  - name: Usrer creation
+    ansible.builtin.command: useradd roboshop
+    when: user_output.rc != 0
