@@ -2,6 +2,7 @@
   hosts: local
   connection: local
   vars: 
+   COURSE: "DAWS with Anisble"
    topics: linux, shell, terraform, ansible
    tagsMap:
     course: ansible
@@ -45,3 +46,11 @@
   - name: Converting yaml to JSON
     ansible.builtin.debug:
      msg: "{{ students_yaml | to_nice_json }}"
+
+  - name: to UpperCase
+    ansible.builtin.debug:
+     msg: "{{ COURSE | to_uppercase }}"
+
+  - name: to LowerCase
+    ansible.builtin.debug:
+     msg: "{{ COURSE | to_lowercase }}"
