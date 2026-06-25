@@ -3,6 +3,10 @@
   connection: local
   vars: 
    topics: linux, shell, terraform, ansible
+   tags:
+    course: ansible
+    duration: 10
+    sessions: 8
   tasks:
   - name: greetings
     ansible.builtin.debug:
@@ -11,3 +15,7 @@
   - name: slipting Variable
     ansible.builtin.debug:
      msg: "{{ topics | split (',') }}" 
+
+  - name: converting map to list 
+    ansible.builtin.debug:
+     msg: "{{ tags | dict2list }}" 
